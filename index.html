@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CTY 2023 WEB DESIGN</title>
+</head>
+
+<!-- Internal css -->
+<!-- <style>
+    nav{
+        background-color: aquamarine;
+    }
+</style> -->
+
+<body>
+
+<!-- 
+
+    css rules must have 3 major components
+    1. The element
+    2. The property
+    3. The value
+types of css
+1. inline css
+2. Internal css
+3. External css
+
+ -->
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="list-item" href="#">TABIO-CTY</a> </li>
+            <li><a class="list-item" href="about.html">ABOUT</a> </li>
+            <li><a class="list-item" href="contact.html">CONTACT</a> </li>
+            <li>FAQ</li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1>Welcome to CTY 2023!</h1>
+    </header>
+    <!-- <h2>Welcome to CTY 2023!</h2>
+    <h3>Welcome to CTY 2023!</h3>
+    <h4>Welcome to CTY 2023!</h4>
+    <h5>Welcome to CTY 2023!</h5>
+    <h6>Welcome to CTY 2023!</h6> -->
+    <section class="main-section">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ducimus fugiat fugit? Ad quibusdam, officia, at deleniti aliquid reiciendis dolorem ratione autem totam veritatis perferendis deserunt tempore fuga laboriosam! Officia.</p>
+
+    </section>
+    <!-- 
+
+        List in html
+        3 type of list in html
+        1. ordered list - These are numbered list (1, 2, 3...)
+        2. unordered - unorder list are list with bullet points 
+        3. Definition list - title and descripition
+
+        ul - unorderedlist
+        ol - ordered list
+        li - list item
+        dl - definition list
+        dt - definition term
+        dd - definition description
+     -->
+     <!-- ordered list -->
+     <section class="list-section">
+        <div class="ol">
+            <ol>
+               <li>Rice</li>
+               <li>Beans</li>
+               <li>Garri</li>
+               <li>Yam</li>
+               <li>Plantain</li>
+            </ol>
+        </div>
+        <div class="ul">
+            <h3>Food stuff</h3>
+             <ul>
+                <li>Rice</li>
+                <li>Beans</li>
+                <li>Garri</li>
+                <li>Yam</li>
+                <li>Plantain</li>
+             </ul>
+        </div>
+    <div class="dl">
+        <dl>
+           <dt>School</dt>
+           <dd>A school is a learning place</dd>
+        </dl>
+        <h3>Food stuff</h3>
+    </div>
+     </section>
+
+     <section class="media-section">
+         <img src="asset/img/pexels-ahmed-ツ-17706105.jpg" alt="a lady standing" width="200">
+         <br>
+         <video src="asset/videos/pexels-andy-barbour-6671567 (2160p).mp4" width="500" controls></video>
+         <audio src="asset/audio/Amazing-Jonathan-Butler-Going-Home_i32cfWJ7CcA.mp3" controls loop></audio>
+     </section>
+
+     <!-- tables in html -->
+     <!-- tr - table row
+     td - table data 
+     th - table heading  -->
+     <section class="table-section">
+         <table border="1">
+            <caption>Grocery</caption>
+            <thead>
+                <tr>
+                    <th>S/n</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Garri</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Beans</td>
+                    <td>$200</td>
+                </tr>
+            </tbody>
+         </table>
+     </section>
+<!-- Creating forms in html -->
+<!-- div tag - division 
+Templating tags in html - e.g div, section, aside, header, footer, 
+input type in html
+1. text
+2. email
+3. password
+4. color-
+5. file - images, excel
+6. date
+7. time
+8. datetime
+
+-->
+
+<section class="form-section">
+    <form action="">
+        <div>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" placeholder="First Name here">
+        </div>
+        <div>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" placeholder="Last name here">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email here">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password here">
+        </div>
+        <div>
+            <label for="color">Skin color</label>
+            <input type="color" name="color" id="color" >
+        </div>
+        <div>
+            <label for="upload">Upload your result</label>
+            <input type="file" name="upload" id="upload" >
+        </div>
+        <div>
+            <label for="date">Date of Birth</label>
+            <input type="date" name="upload" id="date" >
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    
+    </form>
+
+</section>
+
+<footer class="footer-section">
+    <p>&copy; Cty 2023</p>
+</footer>
+
+</body>
+</html>

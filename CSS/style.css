@@ -1,0 +1,109 @@
+*,html,body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* We represent class in css with . (period)
+We represent id with # in css
+
+Standard template for css is
+1. selector - element
+The property can be
+1. html tag
+2. The class
+3. The id
+2. property
+3. value
+
+*/
+
+
+
+/* section{
+    text-align: center;
+} */
+
+/* Navbar  */
+
+/* background-color
+color
+text-align:center, right, left
+float:right, left
+margin
+padding
+background-image: url("../asset/img/nameofimage.png");
+
+Types of color in css
+1. Named color . red, green blue, yellow etc. 
+2. hexadecimal color - 006BFF
+3. RGB COLOR e.g color:rgb(50,14,200)
+    0-255
+4. RGBA COLOR
+
+first two number represent r- red
+second two number represent g - green
+third two numbers represent b - blue
+RGB SCHEME
+
+
+*/
+
+.navbar{
+    background-color:rgba(23,47,150,0.8);
+}
+/* display properties and values
+inline - side by side display
+block - on top of each other
+flex 
+grid
+*/
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul li{
+    list-style-type: none;
+    padding:1.2rem;
+    color:white;
+    font-weight: bolder;
+}
+
+/* state in css 
+link,
+hover,
+visited,
+active
+These states are psudo classes 
+*/
+
+nav a.list-item {
+    color:white;
+}
+
+.header{
+    text-align: center;
+    font-weight: bold;
+    padding:1rem;
+    line-height: 1rem;
+    letter-spacing: .2ch;
+    /* border-bottom: 2px solid white; */
+    text-decoration: underline;
+    /* color:white; */
+    /* max-width:100%; */
+    /* position: relative;
+    left:30%;
+    right:30%; */
+}
+
+section.main-section{
+    padding:10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.list-section{
+    padding:5%;
+    display: flex;
+}
