@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>CTY 2023 WEB DESIGN</title>
 </head>
 
@@ -30,14 +31,22 @@ types of css
  -->
 
     <nav class="navbar">
-        <ul>
-            <li><a class="list-item" href="#">TABIO-CTY</a> </li>
-            <li><a class="list-item" href="about.html">ABOUT</a> </li>
-            <li><a class="list-item" href="contact.html">CONTACT</a> </li>
-            <li>FAQ</li>
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link text-white" href="#">TABIO-CTY</a> </li>
+            <li class="nav-item"><a class="nav-link text-white" href="about.html">ABOUT</a> </li>
+            <li class="nav-item"><a class="nav-link text-white" href="contact.html">CONTACT</a> </li>
+            <li class="nav-item text-success">FAQ</li>
+            <!-- 
+                red danger
+                blue - primary
+                success - green
+                orange - warning
+
+                
+             -->
         </ul>
     </nav>
-    <header class="header">
+    <header class="container text-center text-danger">
         <h1>Welcome to CTY 2023!</h1>
     </header>
     <!-- <h2>Welcome to CTY 2023!</h2>
@@ -65,17 +74,27 @@ types of css
         dd - definition description
      -->
      <!-- ordered list -->
-     <section class="list-section">
-        <div class="ol">
+     <section class="row container">
+        <!-- col-lg
+            col-md
+            col
+            4,4,4
+            3,3,3,3
+            2,10
+            2,2,2,2,2,2
+            6,6
+            5,7
+        -->
+        <div class="col-lg-4 col-md-6 col-12">
             <ol>
-               <li>Rice</li>
-               <li>Beans</li>
-               <li>Garri</li>
-               <li>Yam</li>
-               <li>Plantain</li>
+               <li class="list-item">Rice</li>
+               <li class="list-item">Beans</li>
+               <li class="list-item">Garri</li>
+               <li class="list-item">Yam</li>
+               <li class="list-item">Plantain</li>
             </ol>
         </div>
-        <div class="ul">
+        <div class="col-lg-4 col-md-6 col-12">
             <h3>Food stuff</h3>
              <ul>
                 <li>Rice</li>
@@ -85,7 +104,7 @@ types of css
                 <li>Plantain</li>
              </ul>
         </div>
-    <div class="dl">
+    <div class="col-lg-4 col-md-6 col-12">
         <dl>
            <dt>School</dt>
            <dd>A school is a learning place</dd>
@@ -94,19 +113,23 @@ types of css
     </div>
      </section>
 
-     <section class="media-section">
-         <img src="asset/img/pexels-ahmed-ツ-17706105.jpg" alt="a lady standing" width="200">
-         <br>
-         <video src="asset/videos/pexels-andy-barbour-6671567 (2160p).mp4" width="500" controls></video>
-         <audio src="asset/audio/Amazing-Jonathan-Butler-Going-Home_i32cfWJ7CcA.mp3" controls loop></audio>
+     <section class="card container d-flex flex-row justify-content-center align-item-center">
+        <div class="card-head">
+            <img class="img img-responsive" src="asset/img/pexels-ahmed-ツ-17706105.jpg" alt="a lady standing" width="200">
+        </div>
+       <div class="card-body">
+        <br>
+           <!-- <video src="asset/videos/pexels-andy-barbour-6671567 (2160p).mp4" width="500" controls></video> -->
+           <audio src="asset/audio/Amazing-Jonathan-Butler-Going-Home_i32cfWJ7CcA.mp3" controls loop></audio>
+       </div>
      </section>
 
      <!-- tables in html -->
      <!-- tr - table row
      td - table data 
      th - table heading  -->
-     <section class="table-section">
-         <table border="1">
+     <section class="container-fluid">
+         <table class="table table-responsive table-hover">
             <caption>Grocery</caption>
             <thead>
                 <tr>
@@ -144,38 +167,38 @@ input type in html
 
 -->
 
-<section class="form-section">
-    <form action="">
-        <div>
+<section class="container mx-5">
+    <form class="form-group">
+        <div class="form-group">
             <label for="fname">First Name</label>
-            <input type="text" name="fname" id="fname" placeholder="First Name here">
+            <input class="form-control" type="text" name="fname" id="fname" placeholder="First Name here">
         </div>
-        <div>
+        <div class="form-group">
             <label for="lname">Last Name</label>
-            <input type="text" name="lname" id="lname" placeholder="Last name here">
+            <input class="form-control" type="text" name="lname" id="lname" placeholder="Last name here">
         </div>
-        <div>
+        <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Email here">
+            <input class="form-control" type="email" name="email" id="email" placeholder="Email here">
         </div>
-        <div>
+        <div class="form-group">
             <label for="password">Password</label>
             <input type="password" name="password" id="password" placeholder="Password here">
         </div>
-        <div>
+        <div class="form-group">
             <label for="color">Skin color</label>
-            <input type="color" name="color" id="color" >
+            <input class="form-control" type="color" name="color" id="color" >
         </div>
-        <div>
+        <div class="form-group">
             <label for="upload">Upload your result</label>
-            <input type="file" name="upload" id="upload" >
+            <input class="form-control" type="file" name="upload" id="upload" >
         </div>
-        <div>
+        <div class="form-group">
             <label for="date">Date of Birth</label>
-            <input type="date" name="upload" id="date" >
+            <input class="form-control" type="date" name="upload" id="date" >
         </div>
         <div>
-            <button type="submit">Submit</button>
+            <button type="submit" class="btn btn-danger btn-lg w-100">Submit</button>
         </div>
     
     </form>
@@ -183,7 +206,21 @@ input type in html
 </section>
 
 <footer class="footer-section">
-    <p>&copy; Cty 2023</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+                
+                <p>&copy; TABIO Cty 2023</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+               <p>
+                   Email:info.tabio@gmail.com
+            </p> 
+            <p>09089878767</p>
+                
+            </div>
+        </div>
+    </div>
 </footer>
 
 </body>
