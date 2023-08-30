@@ -30,22 +30,42 @@ types of css
 
  -->
 
-    <nav class="navbar">
-        <ul class="nav justify-content-center">
-            <li class="nav-item"><a class="nav-link text-white" href="#">TABIO-CTY</a> </li>
-            <li class="nav-item"><a class="nav-link text-white" href="about.html">ABOUT</a> </li>
-            <li class="nav-item"><a class="nav-link text-white" href="contact.html">CONTACT</a> </li>
-            <li class="nav-item text-success">FAQ</li>
-            <!-- 
-                red danger
-                blue - primary
-                success - green
-                orange - warning
-
-                
-             -->
-        </ul>
-    </nav>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">TABIO CTY</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Portfolio
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Photo Gallery</a></li>
+            <li><a class="dropdown-item" href="#">Skills</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Account</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " aria-disabled="true" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
     <header class="container text-center text-danger">
         <h1>Welcome to CTY 2023!</h1>
     </header>
@@ -54,10 +74,47 @@ types of css
     <h4>Welcome to CTY 2023!</h4>
     <h5>Welcome to CTY 2023!</h5>
     <h6>Welcome to CTY 2023!</h6> -->
-    <section class="main-section">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ducimus fugiat fugit? Ad quibusdam, officia, at deleniti aliquid reiciendis dolorem ratione autem totam veritatis perferendis deserunt tempore fuga laboriosam! Officia.</p>
-
-    </section>
+ 
+    <div class="container my-5">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="asset/img/p3.jpg" class="d-block w-100 p-5 img-fluid justify-content-center" height="200" alt="...">
+      <div class="carousel-caption d-none d-md-block text-bold text-white bg-dark">
+        <h5>Photo/Videography class</h5>
+        <p>Our media team students are doing stunts in class performing wonders of their own creativity!</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="asset/img/Makup2.jpg" class="d-block w-100 p-5 img-fluid justify-content-center" alt="...">
+      <div class="carousel-caption d-none d-md-block text-bold text-white bg-dark">
+        <h5>MAKE UP BRETHREN - AMAPIANO</h5>
+        <p>Our makeup brethren are on the good vibe giving us some hot amapiano flavour</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="asset/img/offi.jpg" class="d-block w-100 p-5 img-fluid justify-content-center" alt="...">
+      <div class="carousel-caption d-none d-md-block text-bold text-white bg-dark">
+        <h5>TABIO OFFICALS</h5>
+        <p>Our amazing Tabio team doing posting vibes on the low low</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </div>
     <!-- 
 
         List in html
@@ -74,64 +131,66 @@ types of css
         dd - definition description
      -->
      <!-- ordered list -->
-     <section class="row container">
-        <!-- col-lg
-            col-md
-            col
-            4,4,4
-            3,3,3,3
-            2,10
-            2,2,2,2,2,2
-            6,6
-            5,7
-        -->
+     <div class="container">
+         <section class="row">
+            <!-- col-lg
+                col-md
+                col
+                4,4,4
+                3,3,3,3
+                2,10
+                2,2,2,2,2,2
+                6,6
+                5,7
+            -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <ol>
+                   <li class="list-item">Rice</li>
+                   <li class="list-item">Beans</li>
+                   <li class="list-item">Garri</li>
+                   <li class="list-item">Yam</li>
+                   <li class="list-item">Plantain</li>
+                </ol>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <h3>Food stuff</h3>
+                 <ul>
+                    <li>Rice</li>
+                    <li>Beans</li>
+                    <li>Garri</li>
+                    <li>Yam</li>
+                    <li>Plantain</li>
+                 </ul>
+            </div>
         <div class="col-lg-4 col-md-6 col-12">
-            <ol>
-               <li class="list-item">Rice</li>
-               <li class="list-item">Beans</li>
-               <li class="list-item">Garri</li>
-               <li class="list-item">Yam</li>
-               <li class="list-item">Plantain</li>
-            </ol>
-        </div>
-        <div class="col-lg-4 col-md-6 col-12">
+            <dl>
+               <dt>School</dt>
+               <dd>A school is a learning place</dd>
+            </dl>
             <h3>Food stuff</h3>
-             <ul>
-                <li>Rice</li>
-                <li>Beans</li>
-                <li>Garri</li>
-                <li>Yam</li>
-                <li>Plantain</li>
-             </ul>
         </div>
-    <div class="col-lg-4 col-md-6 col-12">
-        <dl>
-           <dt>School</dt>
-           <dd>A school is a learning place</dd>
-        </dl>
-        <h3>Food stuff</h3>
-    </div>
-     </section>
-
-     <section class="card container d-flex flex-row justify-content-center align-item-center">
-        <div class="card-head">
-            <img class="img img-responsive" src="asset/img/pexels-ahmed-ツ-17706105.jpg" alt="a lady standing" width="200">
-        </div>
-       <div class="card-body">
-        <br>
-           <!-- <video src="asset/videos/pexels-andy-barbour-6671567 (2160p).mp4" width="500" controls></video> -->
-           <audio src="asset/audio/Amazing-Jonathan-Butler-Going-Home_i32cfWJ7CcA.mp3" controls loop></audio>
-       </div>
-     </section>
+         </section>
+    
+         <section class="card container d-flex flex-row justify-content-center align-item-center">
+            <div class="card-head">
+                <img class="img img-responsive" src="asset/img/pexels-ahmed-ツ-17706105.jpg" alt="a lady standing" width="200">
+            </div>
+           <div class="card-body">
+            <br>
+               <!-- <video src="asset/videos/pexels-andy-barbour-6671567 (2160p).mp4" width="500" controls></video> -->
+               <audio src="asset/audio/Amazing-Jonathan-Butler-Going-Home_i32cfWJ7CcA.mp3" controls loop></audio>
+           </div>
+         </section>
+     </div>
 
      <!-- tables in html -->
      <!-- tr - table row
      td - table data 
      th - table heading  -->
-     <section class="container-fluid">
+     <section class="container my-5">
+         <caption>Grocery</caption>
          <table class="table table-responsive table-hover">
-            <caption>Grocery</caption>
-            <thead>
+             <thead>
                 <tr>
                     <th>S/n</th>
                     <th>Product</th>
@@ -166,6 +225,29 @@ input type in html
 8. datetime
 
 -->
+
+<!-- image gallery -->
+
+<div class="container">
+    <h3>Tabio Image Gallery</h3>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-12">
+            <img src="asset/img/p3.jpg" alt="" class="img img-fluid img-thumbnail">
+            <img src="asset/img/offi.jpg" alt="" class="img img-fluid img-thumbnail">
+            <img src="asset/img/WhatsApp Image 2023-08-23 at 12.10.01.jpg" alt="" class="img img-fluid img-thumbnail">
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <img src="asset/img/Makup3.jpg" alt="" class="img img-fluid img-thumbnail">
+            <img src="asset/img/stud.jpg" alt="" class="img img-fluid img-thumbnail">
+            <img src="asset/img/Makup3.jpg" alt="" class="img img-fluid img-thumbnail">
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <img src="asset/img/p3.jpg" alt="" class="img img-fluid img-thumbnail">
+            <img src="asset/img/stud.jpg" alt="" class="img img-fluid img-thumbnail">
+            <img src="asset/img/Makeup1.jpg"" class="img img-fluid img-thumbnail">
+        </div>
+    </div>
+</div>
 
 <section class="container mx-5">
     <form class="form-group">
@@ -205,7 +287,7 @@ input type in html
 
 </section>
 
-<footer class="footer-section">
+<footer class="footer-section bg-dark text-white text-left mt-5 p-3">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-12">
@@ -223,5 +305,6 @@ input type in html
     </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
 </body>
 </html>
